@@ -1,0 +1,48 @@
+public class Estoque {
+    private int id;
+    private int produtoId;
+    private int quantidadeDisponivel;
+
+    // Testando para o projeto luis miguel//
+
+    public Estoque(int id, int produtoId, int quantidadeDisponivel) {
+        this.id = id;
+        this.produtoId = produtoId;
+        this.quantidadeDisponivel = quantidadeDisponivel;
+    }
+
+    // Getters and Setters 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getProdutoId() {
+        return produtoId;
+    }
+
+    public void setProdutoId(int produtoId) {
+        this.produtoId = produtoId;
+    }
+
+    public int getQuantidadeDisponivel() {
+        return quantidadeDisponivel;
+    }
+
+    public void setQuantidadeDisponivel(int quantidadeDisponivel) {
+        this.quantidadeDisponivel = quantidadeDisponivel;
+    }
+
+    // Métodos adicionais
+    public void atualizarEstoque() {
+        // Implementação para atualizar o estoque (futuramente interagir com banco)
+    }
+
+    public boolean verificarNivelCritico() {
+        // Verifica se o estoque está abaixo de um nível crítico
+        return quantidadeDisponivel < 10;  // Exemplo de critério
+    }
+}
