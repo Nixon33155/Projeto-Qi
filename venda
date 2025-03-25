@@ -1,0 +1,45 @@
+public class Venda {
+    private int id;
+    private int pedidoId;
+    private double valorTotal;
+
+    public Venda(int id, int pedidoId, double valorTotal) {
+        this.id = id;
+        this.pedidoId = pedidoId;
+        this.valorTotal = valorTotal;
+    }
+
+    // Getters and Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getPedidoId() {
+        return pedidoId;
+    }
+
+    public void setPedidoId(int pedidoId) {
+        this.pedidoId = pedidoId;
+    }
+
+    public double getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
+    // Métodos adicionais
+    public void processarPagamento() {
+        // Implementação fictícia de pagamento
+    }
+
+    public void gerarNotaFiscal() {
+        // Implementação fictícia de geração de nota fiscal
+    }
+}
